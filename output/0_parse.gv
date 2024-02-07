@@ -1,0 +1,42 @@
+// (' = ', 'var', (' - ', (' + ', (' / ', 9, 10), 6), 8))
+digraph {
+	Z [label=assign]
+	X [label=factor]
+	W [label=var]
+	Y [label=" = "]
+	V [label=expression]
+	T [label=expression]
+	R [label=term]
+	P [label=factor]
+	O [label=9]
+	Q [label=" / "]
+	N [label=factor]
+	M [label=10]
+	R [label=term]
+	S [label=" + "]
+	L [label=factor]
+	K [label=6]
+	T [label=expression]
+	U [label=" - "]
+	J [label=factor]
+	I [label=8]
+	V [label=expression]
+	Z -> X
+	X -> W
+	Z -> Y
+	R -> P
+	P -> O
+	R -> Q
+	R -> N
+	N -> M
+	T -> R
+	T -> S
+	T -> L
+	L -> K
+	V -> T
+	V -> U
+	V -> J
+	J -> I
+	Z -> V
+	label="\n\nParse tree for line\n(' = ', 'var', (' - ', (' + ', (' / ', 9, 10), 6), 8))"
+}

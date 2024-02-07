@@ -1,0 +1,33 @@
+// (' - ', (' + ', 6, 4), (' * ', 10, 1))
+digraph {
+	Z [label=expression]
+	X [label=expression]
+	V [label=factor]
+	U [label=6]
+	W [label=" + "]
+	T [label=factor]
+	S [label=4]
+	X [label=expression]
+	Y [label=" - "]
+	R [label=term]
+	P [label=factor]
+	O [label=10]
+	Q [label=" * "]
+	N [label=factor]
+	M [label=1]
+	R [label=term]
+	X -> V
+	V -> U
+	X -> W
+	X -> T
+	T -> S
+	Z -> X
+	Z -> Y
+	R -> P
+	P -> O
+	R -> Q
+	R -> N
+	N -> M
+	Z -> R
+	label="\n\nParse tree for line\n(' - ', (' + ', 6, 4), (' * ', 10, 1))"
+}
